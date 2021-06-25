@@ -1,0 +1,96 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	position: absolute;
+	background-image: url('https://ca-times.brightspotcdn.com/dims4/default/0526567/2147483647/strip/true/crop/1024x679+0+0/resize/840x557!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F52%2F76%2F34552cdc60fc0c0b098ee3968b0e%2Fla-ed-youtube-music-service-20140622-001');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	overflow-x: hidden;
+}
+body::before{
+	content: '';
+    background-color: rgba(40, 62, 74 , .5);
+    min-height: 100vh;
+	width: 100vw;
+    position: fixed;
+    z-index: -1;	
+
+}
+.container{
+	text-align: center;
+	width: 1100px;
+	margin: 0 auto;
+}
+#ytBox{
+	border-radius: 6px;
+	position: relative;
+	background-color: rgba(0,0,0,.4);
+	width: 600px;
+	height: 400px;
+    margin: 100px 0 0 260px;
+    transition: .3s ease box-shadow;
+}
+#ytBox:hover,#submitBtn:hover{
+    box-shadow:0px 0px 16px #d22;
+}
+#ytLink{
+	position: absolute;
+	top: 20px;
+	left: 40px;
+}
+#ytLink svg{
+	width: 80px;
+	height: 100px;
+}
+#form{
+	display: flex;
+	flex-direction: column;
+	padding-top: 100px;
+	width: 60%;
+	margin: 0 auto;
+}
+form input{
+	color: #fff;
+	font-size: 16px;
+	margin-bottom: 10px;
+	height: 30px;
+	padding: 8px;
+	border-radius: 10px;
+	background-color: rgba(0,0,0,.7);
+}
+form input:hover,form input:focus{
+	outline: none;
+	cursor: pointer;
+}
+#submitBtn{
+    transition: .3s ease box-shadow;
+	background-color: #b30d08;
+	color: #fff;
+	border-radius: 10px;
+	border: none;
+	height: 30px;
+	padding: 4px 0 0 0;
+	display: inline-block;
+	width: 30%;
+	text-align: center;
+	font-size: 20px;
+	font-family: 'Raleway' , 'Roboto';
+}
+#submitBtn:hover, #submitBtn:focus{
+	cursor: pointer;
+    outline: none;
+}
+form label{
+	font-size: 15px;
+	letter-spacing: 1px;
+	font-family: 'Raleway' , 'Roboto';
+	text-align: left;
+	margin-bottom: 5px;
+	color: #fff;
+	font-weight: bold;
+}
